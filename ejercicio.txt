@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+    int numeros[30,62,60,
+    27,69,39,54,46,44,25,24,44,46,24,52,47,
+    53,64,74,55,63,72,14,67,27,63,20,44,57,
+    70,26,27,23,37,38,76,67,16,26,20,14,31,
+    46,57,72,39,38,19,28,28,61,22,48,66,96,
+    36,102,84,57,26,94,105,41,85,106,22,93,
+    85,309,446,447,494,271,328,352,353,266,
+    281,262,389,333,317,319,314,507,320,262,
+    310,492,484,438,257,298,303,394,389,510,
+    304,505,353,385,470,355,464,392,428,1465];
+
+    int mayor, menor, suma, cant;
+    float promedio;
+    cant = 0;
+    mayor = menor = suma = numeros[0];
+
+    for (int i=1; i < sizeof(numeros) / sizeof(numeros[0]); ++i)
+    {
+
+        if (numeros[i] > mayor) mayor = numeros[i];
+        if (numeros[i] < menor) menor = numeros[i];
+        suma = suma + numeros[i];
+        cant = cant + 1
+    }
+    
+    cout << "El mayor es %d, el menor es %d, el promedio es %d \n", mayor, menor, promedio;
+
+}
